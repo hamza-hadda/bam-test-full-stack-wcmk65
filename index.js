@@ -64,7 +64,6 @@ function triFusion(tab) {
   } else {
     var q = Math.ceil(tabL / 2);
     var left = triFusion(tab.slice(0,q));
-    console.log("left: " +left);
     var right = triFusion(tab.slice(q, tabL));
     return fusion(left, right); 
   }
